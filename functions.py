@@ -99,7 +99,6 @@ Desenvolvedor: João Pedro Rodrigues""", "Bot ARISOL", "Iniciar Bot")
         for i in range(tasks.count_rows(1)):
             for j in collumns:
                 cells_list.append(j+str(n+3))
-                print(cells_list)
         
         #Cria um dicionário vinculando as células ao seu respectivo campo.
         cont = 0

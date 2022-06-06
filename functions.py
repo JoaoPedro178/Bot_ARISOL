@@ -1449,7 +1449,11 @@ def sumario():
             pyautogui.click('images\\click_icons\\pdf_icons\\click_assinaturas\\click_assinaturas.png')    #PDF Phantom - Assinaturas
             break
         except TypeError:
-            print("Procurando ícone 'Assinaturas'...")
+            try:
+                pyautogui.click('images\\click_icons\\pdf_icons\\click_assinaturas\\click_assinaturas_2.png')    #PDF Phantom - Assinaturas
+                break
+            except TypeError:
+                print("Procurando ícone 'Assinaturas'...")
 
     time.sleep(0.3)
     pyautogui.hotkey("home")
@@ -1482,7 +1486,11 @@ def sumario():
             pyautogui.click('images\\click_icons\\pdf_icons\\click_comentarios\\click_comentarios.png')   #Seleciona o número de páginas
             break
         except TypeError:
-            print("Procurando ícone 'Comentarios'")
+            try:
+                pyautogui.click('images\\click_icons\\pdf_icons\\click_comentarios\\click_comentarios_2.png')   #Seleciona o número de páginas
+                break
+            except TypeError:
+                print("Procurando ícone 'Comentarios'")
 
     time.sleep(0.5)
     pyautogui.hotkey("home")
@@ -1504,8 +1512,12 @@ def sumario():
                 pyautogui.click('images\\click_icons\\pdf_icons\\click_conclusao\\click_conclusao_2.png')   #Seleciona o número de páginas
                 break
             except TypeError:
-                print("Procurando ícone 'Conclusao'")
-                print('Tentando novamente...')
+                try:
+                    pyautogui.click('images\\click_icons\\pdf_icons\\click_conclusao\\click_conclusao_3.png')   #Seleciona o número de páginas
+                    break
+                except TypeError:
+                    print("Procurando ícone 'Conclusao'")
+                    print('Tentando novamente...')
     time.sleep(0.5)
     pyautogui.hotkey("home")
     time.sleep(0.3)
